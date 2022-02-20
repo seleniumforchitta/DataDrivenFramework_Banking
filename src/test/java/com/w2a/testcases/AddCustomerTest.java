@@ -4,6 +4,7 @@ import java.util.Hashtable;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.Test;
@@ -29,8 +30,9 @@ public class AddCustomerTest extends TestBase {
 		type("postcode_CSS",data.get("postcode"));
 		click("addbtn_CSS");
 		Thread.sleep(2000);
-		Alert alert = wait.until(ExpectedConditions.alertIsPresent());
 		
+		
+		Alert alert = driver.switchTo().alert();
 		Assert.assertTrue(alert.getText().contains(data.get("alerttext")));
 		alert.accept();
 		

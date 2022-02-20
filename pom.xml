@@ -11,18 +11,17 @@
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>6.11</version>
+			<version>7.5</version>
+			<scope>test</scope>
 		</dependency>
-
 
 
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>2.53.1</version>
+			<version>4.1.1</version>
 		</dependency>
-
 
 		<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
 		<dependency>
@@ -104,13 +103,18 @@
 			<version>3.6</version>
 		</dependency>
 
-
-
-
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>24.0-jre</version>
+		</dependency>
 
 	</dependencies>
 
-
+	<properties>
+		<maven.compiler.source>1.7</maven.compiler.source>
+		<maven.compiler.target>1.7</maven.compiler.target>
+	</properties>
 
 	<build>
 		<plugins>
@@ -123,17 +127,12 @@
 					<testFailureIgnore> false </testFailureIgnore>
 					<suiteXmlFiles>
 						<suiteXmlFile>src/test/resources/runner/testng.xml</suiteXmlFile>
-
 					</suiteXmlFiles>
 				</configuration>
 
-
-
 			</plugin>
 
-
 		</plugins>
-
 
 		<testResources>
 			<testResource>
@@ -144,10 +143,6 @@
 			</testResource>
 		</testResources>
 
-
 	</build>
-
-
-
 
 </project>

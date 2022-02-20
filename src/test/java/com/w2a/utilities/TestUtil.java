@@ -6,9 +6,9 @@ import java.lang.reflect.Method;
 import java.util.Date;
 import java.util.Hashtable;
 
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.io.FileHandler;
 import org.testng.annotations.DataProvider;
 
 import com.w2a.base.TestBase;
@@ -25,7 +25,7 @@ public class TestUtil extends TestBase {
 		Date d = new Date();
 		screenshotName = d.toString().replace(":", "_").replace(" ", "_") + ".jpg";
 
-		FileUtils.copyFile(scrFile,
+		FileHandler.copy(scrFile,
 				new File(System.getProperty("user.dir") + "\\target\\surefire-reports\\html\\" + screenshotName));
 
 	}

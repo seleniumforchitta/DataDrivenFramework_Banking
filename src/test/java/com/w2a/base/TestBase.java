@@ -3,6 +3,7 @@ package com.w2a.base;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -49,6 +50,7 @@ public class TestBase {
 	public static ExtentTest test;
 	public static String browser;
 
+	@SuppressWarnings("deprecation")
 	@BeforeSuite
 	public void setUp() {
 
@@ -122,9 +124,7 @@ public class TestBase {
 			driver.get(config.getProperty("testsiteurl"));
 			log.debug("Navigated to : " + config.getProperty("testsiteurl"));
 			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")),
-					TimeUnit.SECONDS);
-			wait = new WebDriverWait(driver, 5);
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Integer.parseInt(config.getProperty("implicit.wait"))));
 		}
 
 	}

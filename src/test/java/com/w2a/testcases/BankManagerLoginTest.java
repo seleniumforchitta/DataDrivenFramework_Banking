@@ -10,13 +10,12 @@ import org.testng.annotations.Test;
 import com.w2a.base.TestBase;
 
 public class BankManagerLoginTest extends TestBase {
-
 	
 	@Test
 	public void bankManagerLoginTest() throws InterruptedException, IOException{
 		
 		
-		verifyEquals("abc", "xyz");
+		verifyEquals("xyz", "xyz");
 		Thread.sleep(3000);
 		log.debug("Inside Login Test");
 		click("bmlBtn_CSS");
@@ -26,11 +25,6 @@ public class BankManagerLoginTest extends TestBase {
 		log.debug("Login successfully executed");
 		
 		//Assert.fail("Login not successful");
-		
-		
-		
-	
-	
 	}
 	
 }

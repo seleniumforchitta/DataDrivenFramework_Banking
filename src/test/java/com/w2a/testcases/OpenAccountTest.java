@@ -28,7 +28,7 @@ public class OpenAccountTest extends TestBase {
 		select("currency_CSS", data.get("currency"));
 		click("process_CSS");
 		Thread.sleep(2000);
-		Alert alert = wait.until(ExpectedConditions.alertIsPresent());
+		Alert alert = driver.switchTo().alert();
 		alert.accept();
 
 	}
