@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="11.136" tests="6" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="10.536" tests="8" errors="0" skipped="7" failures="1">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="16.0.2+7-67"/>
@@ -24,9 +24,9 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\CHITTARANJAN _SWAIN_D_Drive\STUDY\Automation_Workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8861690004835585783.tmp"/>
+    <property name="classworlds.conf" value="C:\CHITTARANJAN _SWAIN_D_Drive\STUDY\Automation_Workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf15542348547886342231.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Users\chitt\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.2.v20210721-1149\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/chitt/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.2.v20210721-1149/jre/bin/server;C:/Users/chitt/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.2.v20210721-1149/jre/bin;C:\Python310\Scripts\;C:\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\chitt\AppData\Local\Microsoft\WindowsApps;C:\Users\chitt\.dotnet\tools;C:\Users\chitt\AppData\Roaming\npm;C:\Users\chitt\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\chitt\OneDrive\Desktop;;."/>
+    <property name="java.library.path" value="C:\Users\chitt\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.2.v20210721-1149\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/chitt/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.2.v20210721-1149/jre/bin/server;C:/Users/chitt/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.2.v20210721-1149/jre/bin;C:\Python310\Scripts\;C:\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\chitt\AppData\Local\Microsoft\WindowsApps;C:\Users\chitt\AppData\Roaming\npm;C:\Users\chitt\AppData\Local\Programs\Microsoft VS Code\bin;C:\Windows\System32;;."/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="60.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -55,10 +55,78 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="bankManagerLoginTest" classname="com.w2a.testcases.BankManagerLoginTest" time="3.718"/>
-  <testcase name="addCustomerTest" classname="com.w2a.testcases.AddCustomerTest" time="4.748"/>
-  <testcase name="addCustomerTest" classname="com.w2a.testcases.AddCustomerTest" time="4.54"/>
-  <testcase name="addCustomerTest" classname="com.w2a.testcases.AddCustomerTest" time="4.442"/>
-  <testcase name="addCustomerTest" classname="com.w2a.testcases.AddCustomerTest" time="4.549"/>
-  <testcase name="openAccountTest" classname="com.w2a.testcases.OpenAccountTest" time="2.67"/>
+  <testcase name="setUp" classname="com.w2a.testcases.OpenAccountTest" time="10.536">
+    <failure message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 106&#10;Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;&#10;System info: host: &apos;CHITTARANJAN-ID&apos;, ip: &apos;192.168.29.20&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 106
+Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'CHITTARANJAN-ID', ip: '192.168.29.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:230)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:151)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:104)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:46)
+	at com.w2a.base.TestBase.setUp(TestBase.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]></failure>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 106.0.5249.21 (71f4e2c9a6f38f5550a8ea29a984a08304554956-refs/branch-heads/5249@{#228}) on port 58547
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
+  <testcase name="bankManagerLoginTest" classname="com.w2a.testcases.BankManagerLoginTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="addCustomerTest" classname="com.w2a.testcases.AddCustomerTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="addCustomerTest" classname="com.w2a.testcases.AddCustomerTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="addCustomerTest" classname="com.w2a.testcases.AddCustomerTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="addCustomerTest" classname="com.w2a.testcases.AddCustomerTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="openAccountTest" classname="com.w2a.testcases.OpenAccountTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.w2a.testcases.OpenAccountTest" time="0">
+    <skipped/>
+  </testcase>
 </testsuite>

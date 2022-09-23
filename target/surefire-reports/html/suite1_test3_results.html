@@ -12,15 +12,100 @@
 <body>
 <h1>Open Account Test</h1>
 <p>
-  Test duration: 8.149s
+  Test duration: 6.906s
 </p>
 
+  <table class="resultsTable configTable">
+    <tr><th colspan="3" class="header failedConfig">Failed Configuration</th></tr>
+              <tr class="group">
+        <td colspan="3">com.w2a.testcases.OpenAccountTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  setUp
+      </td>
+  <td class="duration">
+    6.906s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 106<br/>
+Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe<br/>
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;<br/>
+System info: host: &apos;CHITTARANJAN-ID&apos;, ip: &apos;192.168.29.20&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)<br />
+              org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)<br />
+              org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:230)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:151)<br />
+              org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:108)<br />
+              org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:104)<br />
+              org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:91)<br />
+              org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:46)<br />
+              com.w2a.base.TestBase.setUp(TestBase.java:114)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:567)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)<br />
+              org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)<br />
+              org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:368)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:326)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1169)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1092)<br />
+              org.testng.TestNG.run(TestNG.java:1060)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)<br />
+                </div>
+      </td>
+</tr>
+    
+          <tr><td colspan="3">&nbsp;</td></tr>
+      <tr><td colspan="3" class="header skippedConfig">Skipped Configuration</td></tr>
+                    <tr>
+          <td colspan="3" class="group">com.w2a.testcases.OpenAccountTest</td>
+        </tr>
+                
+<tr>
+  <td class="method">
+                  tearDown
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+            </table>
 
 
 
-
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+  <table class="resultsTable" width="100%">
+    <tr><th colspan="3" class="header skipped">Skipped Tests</th></tr>
           <tr>
         <td colspan="3" class="group">com.w2a.testcases.OpenAccountTest</td>
       </tr>
@@ -30,10 +115,10 @@
                   openAccountTest
       </td>
   <td class="duration">
-    2.616s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">{currency=Rupee, customer=Raman Arora}</span><br />
     
         
@@ -41,6 +126,7 @@
       </td>
 </tr>
       </table>
+
   
 </body>
 </html>
