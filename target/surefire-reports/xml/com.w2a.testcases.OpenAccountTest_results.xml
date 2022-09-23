@@ -1,73 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Open Account Test"
-           tests="3"
-           failures="1"
+           tests="1"
+           failures="0"
            errors="0"
-           skipped="2"
-           time="6.906">
+           skipped="0"
+           time="2.609">
   <properties />
-            <testcase name="setUp" time="6.906" classname="com.w2a.testcases.OpenAccountTest">
-                <failure type="org.openqa.selenium.SessionNotCreatedException"
-                  message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 106
-Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;CHITTARANJAN-ID&apos;, ip: &apos;192.168.29.20&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]"
-              >
-<![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 106
-Current browser version is 105.0.5195.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'CHITTARANJAN-ID', ip: '192.168.29.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
-  org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-  org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
-  org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
-  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
-  org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-  org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:230)
-  org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:151)
-  org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
-  org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:104)
-  org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:91)
-  org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:46)
-  com.w2a.base.TestBase.setUp(TestBase.java:114)
-  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-  java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.base/java.lang.reflect.Method.invoke(Method.java:567)
-  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-  org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
-  org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
-  org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
-  org.testng.SuiteRunner.privateRun(SuiteRunner.java:368)
-  org.testng.SuiteRunner.run(SuiteRunner.java:326)
-  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-  org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-  org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-  org.testng.TestNG.runSuites(TestNG.java:1092)
-  org.testng.TestNG.run(TestNG.java:1060)
-  org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-  org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-  org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-  org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-  org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-  org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-]]>
-      </failure>
-
-          </testcase>
-  
-            <testcase name="tearDown" time="0.0" classname="com.w2a.testcases.OpenAccountTest">
-          <skipped />
-    </testcase>
-            <testcase name="openAccountTest" time="0.0" classname="com.w2a.testcases.OpenAccountTest">
-          <skipped />
-    </testcase>
   
   
+            <testcase name="openAccountTest" time="2.609" classname="com.w2a.testcases.OpenAccountTest" />
+      
 </testsuite>
